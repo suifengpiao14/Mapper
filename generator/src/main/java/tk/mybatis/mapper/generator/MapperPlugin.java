@@ -31,7 +31,9 @@ import org.mybatis.generator.api.dom.java.TopLevelClass;
 import org.mybatis.generator.config.CommentGeneratorConfiguration;
 import org.mybatis.generator.config.Context;
 import org.mybatis.generator.internal.util.StringUtility;
-
+import org.mybatis.generator.api.dom.java.Method;
+import org.mybatis.generator.api.IntrospectedColumn;
+import org.mybatis.generator.api.Plugin;
 import java.util.HashSet;
 import java.util.Properties;
 import java.util.Set;

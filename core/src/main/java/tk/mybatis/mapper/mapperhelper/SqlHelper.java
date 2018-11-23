@@ -395,9 +395,9 @@ public class SqlHelper {
                 continue;
             }
             if (notNull) {
-                sql.append(SqlHelper.getIfNotNull(column, column.getColumn() + ",", notEmpty));
+                sql.append(SqlHelper.getIfNotNull(column, "`"+column.getColumn() + "`,", notEmpty));
             } else {
-                sql.append(column.getColumn() + ",");
+                sql.append("`"+column.getColumn() + "`,");
             }
         }
         sql.append("</trim>");

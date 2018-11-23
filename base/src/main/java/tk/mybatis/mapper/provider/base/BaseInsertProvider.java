@@ -90,7 +90,7 @@ public class BaseInsertProvider extends MapperTemplate {
             if (column.isIdentity()) {
                 sql.append(column.getColumn() + ",");
             } else {
-                sql.append(SqlHelper.getIfNotNull(column, column.getColumn() + ",", isNotEmpty()));
+                sql.append(SqlHelper.getIfNotNull(column, "`"+column.getColumn() + "`,", isNotEmpty()));
             }
         }
         sql.append("</trim>");

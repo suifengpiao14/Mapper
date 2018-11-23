@@ -78,7 +78,7 @@ public class EntityColumn {
      * @return
      */
     public String getColumnEqualsHolder(String entityName) {
-        return this.column + " = " + getColumnHolder(entityName);
+        return "`" + this.column + "` = " + getColumnHolder(entityName);
     }
 
     /**
